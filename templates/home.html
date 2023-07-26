@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Predictor de Diabetes</title>
+</head>
+<body>
+    <form method="POST">
+        {{ form.hidden_tag()}}#csrf
+        {{form.edad.label()}}
+        {{form.edad(required="true")}}
+        {{form.nivelEducativo.label()}}
+        {{form.nivelEducativo(required="true")}}
+        {{form.ingresos.label()}}
+        {{form.ingresos(required="true")}}
+        {{form.genero.label()}}
+        {{form.genero(required="true")}}
+        {{form.bmi.label()}}
+        {{form.bmi(required="true")}}
+        {{form.coberturaMedica.label()}}
+        {{form.coberturaMedica()}}
+        {{form.costoCobertura.label()}}
+        {{form.costoCobertura()}}
+        {{form.colesterolCheck.label()}}
+        {{form.colesterolCheck()}}
+        {{form.fumador.label()}}
+        {{form.fumador()}}
+        {{form.acv.label()}}
+        {{form.acv()}}
+        {{form.actividadFisica.label()}}
+        {{form.actividadFisica()}}
+        {{form.frutas.label()}}
+        {{form.frutas()}}
+        {{form.verduras.label()}}
+        {{form.verduras()}}
+        {{form.alcohol.label()}}
+        {{form.alcohol()}}
+        {{form.tension.label()}}
+        {{form.tension()}}
+        {{form.colesterol.label()}}
+        {{form.colesterol()}}
+        {{form.enfermedadesCardiacas.label()}}
+        {{form.enfermedadesCardiacas()}}
+        {{form.submit}}
+        
+    </form>
+</body>
+
+
+
+
+</html>
