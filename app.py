@@ -91,7 +91,7 @@ def main():
         'Income': ingresos,
         'Sex': sexo,
         'NoDocbcCost': costoCobertura,
-        'AnyHealthcare': oberturaMedica,
+        'AnyHealthcare': coberturaMedica,
         'CholCheck': colesterolCheck,
         'Smoker': fumador,
         'Stroke': acv,
