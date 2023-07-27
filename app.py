@@ -1,5 +1,8 @@
 import streamlit as st
 import pandas as pd 
+
+
+
 def main():
     edades=["18 a 24 años","25 a 29 años","30 a 34 años",'35 a 39 años', '40 a 44 años','45 a 49 años','50 a 54 años','55 a 59 años','60 a 64 años','65 a 69 años','70 a 74 años','75 a 79 años','80 años o más']
     nivelesEducativos=['Preescolar', 'Escuela primaria', 'Escuela secundaria (no graduado)','Escuela secundaria (graduado)', 'Universidad o escuela técnica (no graduado)', 'Graduado universitario o más']
@@ -30,6 +33,8 @@ def main():
 
     
     if submit_button:
-        st.write("Tu rango de edad seleccionado es:", bmi)
+        st.write("Tu rango de edad seleccionado es:", colesterol)
+
+
 if __name__ == "__main__":
     main()
