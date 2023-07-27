@@ -106,7 +106,7 @@ def main():
         'HighChol': colesterol,
         'BMI': bmi,
         'HeartDiseaseorAttack': enfermedadesCardiacas}
-         result, state = predict_diabetes(form_data)
+        result, state = predict_diabetes(form_data)
         st.write(result)
 
 
