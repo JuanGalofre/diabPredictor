@@ -97,7 +97,7 @@ def main():
         'AnyHealthcare': oberturaMedica,
         'CholCheck': colesterolCheck,
         'Smoker': fumador,
-        'Stroke': .acv,
+        'Stroke': acv,
         'PhysActivity': actividadFisica,
         'Fruits': frutas,
         'Veggies':verduras,
