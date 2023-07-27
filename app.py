@@ -11,8 +11,14 @@ def main():
         nivelEducativo=st.selectbox("¿Cuál es tu nivel educativo?",nivelesEducativos)
         ingresos=st.selectbox("¿Cuál es tu rango de ingreso anual? en USD",rangoIngresos)
         sexo=st.selectbox("Indica tu sexo",sexos)
+        bmi=st.number_input("Ingresa porfavor tu Indice de masa corporal",value=0.0)
+
+        
         submit_button=st.form_submit_button()
+
+
+    
     if submit_button:
-        st.write("Tu rango de edad seleccionado es:", edad)
+        st.write("Tu rango de edad seleccionado es:", bmi)
 if __name__ == "__main__":
     main()
