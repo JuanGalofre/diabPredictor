@@ -12,7 +12,18 @@ def main():
         ingresos=st.selectbox("¿Cuál es tu rango de ingreso anual? en USD",rangoIngresos)
         sexo=st.selectbox("Indica tu sexo",sexos)
         bmi=st.number_input("Ingresa porfavor tu Indice de masa corporal",value=00.0)
-
+        coberturaMedica=st.checkbox("¿Tienes cobertura médica?")
+        costoCobertura=st.checkbox("¿Tuviste alguna vez problemas para obtener atención médica debido al costo?")
+        colesterolCheck=st.checkbox("¿Te has realizado un chequeo de colesterol en el último año?")
+        fumador=st.checkbox("¿Eres fumador?")
+        acv=st.checkbox("¿Has tenido un accidente cerebrovascular?")
+        actividadFisica=st.checkbox("¿Has hecho ejercicio fisico en los ultimos 30 dias ?")
+        frutas=st.checkbox("¿Consumes frutas regularmente? (1 taza diaria)") 
+        verduras=st.checkbox("¿Consumes verduras regularmente? (1 taza diaria)")
+        alcohol=st.checkbox("¿Tienes un consumo excesivo de alcohol? (más de 7 copas a la semana)")
+        tension=st.checkbox("¿Tienes presión arterial alta?")
+        colesterol=st.checkbox("¿Tienes colesterol alto?")
+        enfermedadesCardiacas=st.checkbox("¿Has tenido alguna vez enfermedades cardíacas o ataques al corazón?")
         
         submit_button=st.form_submit_button()
 
