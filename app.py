@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd 
 import pandas as pd
-from sklearn.preprocessing import StandardScaler, LabelEncoder
 import pandas as pd
-from sklearn.preprocessing import StandardScaler, LabelEncoder
 from tensorflow import keras
 from keras.layers import Dense
 from keras.models import Sequential, load_model
