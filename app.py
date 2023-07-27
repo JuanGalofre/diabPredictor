@@ -86,25 +86,26 @@ def main():
     
     if submit_button:
         form_data={
-        'Age': edad,
-        'Education': nivelEducativo,
-        'Income': ingresos,
-        'Sex': sexo,
-        'NoDocbcCost': costoCobertura,
-        'AnyHealthcare': coberturaMedica,
-        'CholCheck': colesterolCheck,
-        'Smoker': fumador,
-        'Stroke': acv,
-        'PhysActivity': actividadFisica,
-        'Fruits': frutas,
-        'Veggies':verduras,
-        'HvyAlcoholConsump':alcohol,
-        'HighBP': tension,
-        'HighChol': colesterol,
-        'BMI': bmi,
-        'HeartDiseaseorAttack': enfermedadesCardiacas}
+        'Age': [edad],
+        'Education': [nivelEducativo],
+        'Income': [ingresos],
+        'Sex': [sexo],
+        'NoDocbcCost': [costoCobertura],
+        'AnyHealthcare': [coberturaMedica],
+        'CholCheck': [colesterolCheck],
+        'Smoker': [fumador],
+        'Stroke': [acv],
+        'PhysActivity': [actividadFisica],
+        'Fruits': [frutas],
+        'Veggies':[verduras],
+        'HvyAlcoholConsump':[alcohol],
+        'HighBP': [tension],
+        'HighChol': [colesterol],
+        'BMI': [bmi],
+        'HeartDiseaseorAttack': [enfermedadesCardiacas]}
         result, state = predict_diabetes(form_data)
         st.write(result)
+        st.write(state)
 
 
 if __name__ == "__main__":
