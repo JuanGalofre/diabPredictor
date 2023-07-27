@@ -1,5 +1,13 @@
 import streamlit as st
 import pandas as pd 
+import pandas as pd
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+import pandas as pd
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from tensorflow import keras
+from keras.layers import Dense
+from keras.models import Sequential, load_model
+
 def predict_diabetes(form_data):
     # Load the trained model
     model = load_model('./diabetes_model.h5')
@@ -81,23 +89,23 @@ def main():
     
     if submit_button:
         form_data={
-        'Age': [form.edad.data],
-        'Education': [form.nivelEducativo.data],
-        'Income': [form.ingresos.data],
-        'Sex': [form.genero.data],
-        'NoDocbcCost': [form.costoCobertura.data],
-        'AnyHealthcare': [form.coberturaMedica.data],
-        'CholCheck': [form.colesterolCheck.data],
-        'Smoker': [form.fumador.data],
-        'Stroke': [form.acv.data],
-        'PhysActivity': [form.actividadFisica.data],
-        'Fruits': [form.frutas.data],
-        'Veggies': [form.verduras.data],
-        'HvyAlcoholConsump': [form.alcohol.data],
-        'HighBP': [form.tension.data],
-        'HighChol': [form.colesterol.data],
-        'BMI': [form.bmi.data],
-        'HeartDiseaseorAttack': [form.enfermedadesCardiacas.data]}
+        'Age': edad,
+        'Education': nivelEducativo,
+        'Income': ingresos,
+        'Sex': sexo,
+        'NoDocbcCost': costoCobertura,
+        'AnyHealthcare': oberturaMedica,
+        'CholCheck': colesterolCheck,
+        'Smoker': fumador,
+        'Stroke': .acv,
+        'PhysActivity': actividadFisica,
+        'Fruits': frutas,
+        'Veggies':verduras,
+        'HvyAlcoholConsump':alcohol,
+        'HighBP': tension,
+        'HighChol': colesterol,
+        'BMI': bmi,
+        'HeartDiseaseorAttack': enfermedadesCardiacas}
          result, state = predict_diabetes(form_data)
         st.write(result)
 
